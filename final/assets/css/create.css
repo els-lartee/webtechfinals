@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation bar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-buttons a.active {
+    background-color: #083768; /* JewelQuest blue */
+    color: white;
+}
+
+.nav-buttons a:hover {
+    background-color: rgba(8, 55, 104, 0.1); /* Light blue hover effect */
+}
+
+/* Main content styles */
+.create-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    box-shadow: 0 0 5px rgba(8, 55, 104, 0.8);
+}
+
+.form-group textarea {
+    resize: none;
+}
+
+.upload-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.upload-preview img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.create-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #083768;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-button:hover {
+    background-color: #062b54;
+}
+
+/* Error Messages Styling */
+.error-messages {
+    display: none;
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #f5c2c7;
+    border-radius: 5px;
+}
+
+.error-messages p {
+    margin: 0;
+}
